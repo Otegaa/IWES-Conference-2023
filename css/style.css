@@ -1,9 +1,35 @@
+/* font family */
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
+
+/* Variables */
+:root {
+  --color-light-gray: #d3d3d3;
+  --color-carmine-pink: #ec5242;
+  --color-charleston-green: #272a31;
+}
+
+/* General styles */
+
 * {
   margin: 0;
   padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+*,
+*::after,
+*::before {
   box-sizing: inherit;
 }
 
-body {
+html {
   box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  min-height: 100vh;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
 }
