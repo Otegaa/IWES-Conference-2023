@@ -1,11 +1,15 @@
 /* font family */
-@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap");
 
 /* Variables */
 :root {
+  --color-lighter-gray: #ececec;
   --color-light-gray: #d3d3d3;
   --color-carmine-pink: #ec5242;
+  --color-royal-orange: #e72a17;
   --color-charleston-green: #272a31;
+  --color-white: #fff;
+  --color-dark-charcoal: #323232;
 }
 
 /* General styles */
@@ -32,4 +36,73 @@ body {
   min-height: 100vh;
   font-family: "Lato", sans-serif;
   font-weight: 400;
+}
+
+/* header and information */
+.header-container {
+  height: 100vh;
+  background-image: url(../assets/backgroundImg.svg);
+  background-size: cover;
+  padding: 1rem 2rem 5rem;
+}
+
+.desktop-navbar {
+  display: none;
+}
+
+.hamburger-container {
+  margin-bottom: 3rem;
+}
+
+.hamburger-container__img {
+  width: 5rem;
+  height: 5rem;
+}
+
+.info__greeting,
+.info__meeting-info {
+  display: inline-block;
+  background-image: linear-gradient(
+    to right,
+    var(--color-carmine-pink),
+    var(--color-royal-orange)
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.info__greeting {
+  font-size: 2.3rem;
+  font-weight: 300;
+  margin-bottom: 0.7rem;
+}
+
+.info__meeting-info {
+  font-size: 2.5rem;
+  font-weight: 900;
+  margin-bottom: 1.5rem;
+  letter-spacing: 1px;
+}
+
+.info__meeting-details {
+  font-size: 1.5rem;
+  line-height: 1.5;
+  background-color: var(--color-lighter-gray);
+  color: var(--color-charleston-green);
+  border: 2px solid var(--color-white);
+  margin-bottom: 1.1rem;
+  padding: 0.7rem;
+}
+
+.info__meeting-date {
+  font-size: 2rem;
+  font-weight: 900;
+  color: var(--color-charleston-green);
+  margin-bottom: 0.7rem;
+}
+
+.info__meeting-address {
+  font-size: 1.5rem;
+  color: var(--color-charleston-green);
 }
