@@ -221,11 +221,12 @@ body {
   border: none;
   font-weight: 700;
   text-transform: uppercase;
-  background-image: linear-gradient(
-    to right,
-    var(--color-carmine-pink),
-    var(--color-royal-orange)
-  );
+  background-image:
+    linear-gradient(
+      to right,
+      var(--color-carmine-pink),
+      var(--color-royal-orange)
+    );
   color: var(--color-light-gray);
   border-radius: 100px;
   position: relative;
@@ -252,11 +253,12 @@ body {
 }
 
 .main-program__btn:hover {
-  background-image: linear-gradient(
-    to left,
-    var(--color-carmine-pink),
-    var(--color-royal-orange)
-  );
+  background-image:
+    linear-gradient(
+      to left,
+      var(--color-carmine-pink),
+      var(--color-royal-orange)
+    );
 }
 
 .main-program__btn:hover .main-program__btn-visible {
