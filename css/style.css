@@ -10,6 +10,8 @@
   --color-charleston-green: #272a31;
   --color-white: #fff;
   --color-dark-charcoal: #323232;
+  --color-bg: #494e5a;
+  --transition: all 0.3s ease-in;
 }
 
 /* General styles */
@@ -40,7 +42,7 @@ body {
 
 /* header and information */
 .header-container {
-  height: 100vh;
+  min-height: 50vh;
   background-image: url(../assets/backgroundImg.svg);
   background-size: cover;
   padding: 1rem 2rem 5rem;
@@ -62,13 +64,8 @@ body {
 .info__greeting,
 .info__meeting-info {
   display: inline-block;
-  background-image: linear-gradient(
-    to right,
-    var(--color-carmine-pink),
-    var(--color-royal-orange)
-  );
+  background-image: url(../assets/backgroundClipTextImg.jpeg);
   -webkit-background-clip: text;
-  background-clip: text;
   color: transparent;
 }
 
@@ -76,6 +73,7 @@ body {
   font-size: 2.3rem;
   font-weight: 300;
   margin-bottom: 0.7rem;
+  display: block;
 }
 
 .info__meeting-info {
@@ -105,4 +103,140 @@ body {
 .info__meeting-address {
   font-size: 1.5rem;
   color: var(--color-charleston-green);
+}
+
+/* main program */
+.main-program {
+  background-color: var(--color-charleston-green);
+  color: var(--color-light-gray);
+  padding: 2rem;
+}
+
+.main-program__title {
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+}
+
+/* center the line */
+.main-program__red-line {
+  display: flex;
+  margin: 0 auto;
+  border: 1px solid var(--color-carmine-pink);
+  width: 40px;
+  margin-bottom: 2.5rem;
+}
+
+.main-program__list {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.main-program__details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--color-bg);
+  padding: 1rem;
+  width: 100%;
+}
+
+.main-program__img {
+  width: 5rem;
+  height: 5rem;
+}
+
+.main-program__heading {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--color-carmine-pink);
+}
+
+.main-program__text {
+  font-size: 1.3rem;
+  width: 48%;
+}
+
+/* join IWES button */
+
+.btn {
+  display: flex;
+  justify-content: center;
+}
+
+.main-program__btn {
+  border: none;
+  font-weight: 700;
+  text-transform: uppercase;
+  background-image:
+    linear-gradient(
+      to right,
+      var(--color-carmine-pink),
+      var(--color-royal-orange)
+    );
+  color: var(--color-light-gray);
+  border-radius: 100px;
+  position: relative;
+  overflow: hidden;
+}
+
+.main-program__btn > * {
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  transition: var(--transition);
+}
+
+.main-program__btn-visible {
+  padding: 2rem 5rem;
+}
+
+.main-program__btn-invisible {
+  padding: 2rem 0;
+  position: absolute;
+  left: 0;
+  top: -100%;
+}
+
+.main-program__btn:hover {
+  background-image:
+    linear-gradient(
+      to left,
+      var(--color-carmine-pink),
+      var(--color-royal-orange)
+    );
+}
+
+.main-program__btn:hover .main-program__btn-visible {
+  transform: translateY(100%);
+}
+
+.main-program__btn:hover .main-program__btn-invisible {
+  top: 0;
+}
+
+.main-program__btn:focus {
+  outline: none;
+  animation: pulsate 1s infinite;
+}
+
+@keyframes pulsate {
+  0% {
+    transform: scale(1);
+    box-shadow: none;
+  }
+
+  50% {
+    transform: scale(1.05);
+    box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.25);
+  }
+
+  100% {
+    transform: scale(1);
+    box-shadow: none;
+  }
 }
