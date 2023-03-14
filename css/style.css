@@ -310,6 +310,15 @@ body {
   gap: 1.2rem;
 }
 
+.featured-speakers__box-display {
+  display: none;
+}
+
+.featured-speakers__box:nth-child(1),
+.featured-speakers__box:nth-child(2) {
+  display: flex;
+}
+
 .featured-speakers__img {
   width: 10rem;
   height: 10rem;
@@ -341,11 +350,13 @@ body {
   font-size: 1rem;
 }
 
-.see-more {
+.see-more,
+.see-less {
   padding: 1.5rem;
 }
 
-.see-more__btn {
+.see-more__btn,
+.see-less__btn {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -355,9 +366,18 @@ body {
   text-transform: uppercase;
   padding: 0.7rem 0;
   color: var(--color-charleston-green);
+  transition: var(--transition);
+  cursor: pointer;
 }
 
-.see-more__img {
-  width: 1.7rem;
-  height: 1.7rem;
+.see-more__btn:hover,
+.see-less__btn:hover {
+  background-color: var(--color-charleston-green);
+  color: var(--color-light-gray);
+}
+
+.see-more__img,
+.see-less__img {
+  width: 1rem;
+  height: 1rem;
 }
