@@ -7,7 +7,7 @@
   --color-lighter-gray: #ececec;
   --color-light-gray: #d3d3d3;
   --color-carmine-pink: #ec5242;
-  --color-carmine-pink-rgba: rgba(236, 82, 66, 0.95);
+  --color-carmine-pink-rgba: rgba(74, 20, 14, 0.95);
   --color-royal-orange: #e72a17;
   --color-charleston-green: #272a31;
   --color-white: #fff;
@@ -56,7 +56,7 @@ body {
   height: 100%;
   width: 100%;
   position: fixed;
-  z-index: 10;
+  z-index: 20;
   background-color: var(--color-carmine-pink-rgba);
   overflow-x: hidden;
 }
@@ -80,7 +80,7 @@ body {
 }
 
 .hamburger__show-container li {
-  border-bottom: 2px solid var(--color-charleston-green);
+  border-bottom: 2px solid var(--color-light-gray);
   padding: 0.6rem;
   margin: 0.2rem 2rem 0.4rem;
 }
