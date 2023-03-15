@@ -84,7 +84,7 @@ const dynamicSpeakers = [
 
 const speakers = function () {
   for (let i = 0; i < dynamicSpeakers.length; i += 1) {
-    featuredSpeakers.innerHTML += `  
+    featuredSpeakers.innerHTML += `
         <div class="featured-speakers__box featured-speakers__box-display">
             <img
               src="${dynamicSpeakers[i].img}"
@@ -139,5 +139,15 @@ seeLess.addEventListener('click', () => {
   if (currentItems <= 2) {
     seeMore.style.display = 'flex';
     seeLess.classList.add('hidden');
+  }
+});
+
+// Active page
+const activePage = window.location.pathname;
+const navLinks = document.querySelectorAll('.active');
+
+navLinks.forEach((link) => {
+  if (link.href.includes(`${activePage}`)) {
+    link.classList.add('active');
   }
 });

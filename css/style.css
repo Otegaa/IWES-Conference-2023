@@ -638,3 +638,8 @@ body {
     padding: 3rem 15rem;
   }
 }
+
+/* Active class */
+.active:is(:link, :active, :visited) {
+  color: var(--color-carmine-pink);
+}

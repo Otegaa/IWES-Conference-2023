@@ -485,3 +485,8 @@ body {
     margin-top: 5rem;
   }
 }
+
+/* Active class */
+.active:is(:link, :active, :visited) {
+  color: var(--color-carmine-pink);
+}
