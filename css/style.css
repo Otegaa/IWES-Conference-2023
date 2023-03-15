@@ -98,6 +98,10 @@ body {
   display: none;
 }
 
+.login {
+  display: none;
+}
+
 .desktop-navbar {
   display: none;
 }
@@ -417,8 +421,41 @@ body {
     display: none;
   }
 
+  /* Top Navigation on desktop  */
+
+  .login {
+    display: block;
+    background-color: var(--color-charleston-green);
+    height: 3rem;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 15;
+    padding: 1rem 3rem;
+  }
+
+  .login__nav {
+    display: flex;
+    justify-content: flex-end;
+    margin: 0 auto;
+    gap: 1.5rem;
+  }
+
+  .login__fb,
+  .login__twitter {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  .login__nav li {
+    color: var(--color-light-gray);
+    font-weight: 700;
+    font-size: 1.2rem;
+  }
+
   /* For the navbar */
   .desktop-navbar {
+    margin-top: 3rem;
     display: flex;
     background-color: var(--color-white);
     padding: 1rem 3rem;
@@ -627,6 +664,10 @@ body {
 }
 
 @media screen and (min-width: 62.5em) {
+  .login {
+    padding: 0.7rem 15rem;
+  }
+
   .desktop-navbar {
     padding: 1rem 15rem;
   }
