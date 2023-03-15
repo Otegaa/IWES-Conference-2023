@@ -34,7 +34,7 @@ menuLinks.forEach((link) => {
 const dynamicSpeakers = [
   {
     id: 1,
-    img: '/assets/Chimamanda.svg',
+    img: './assets/Chimamanda.svg',
     name: 'Chimamanda Ngozi Adichie',
     occupation: ' Author and Publisher',
     description:
@@ -42,7 +42,7 @@ const dynamicSpeakers = [
   },
   {
     id: 2,
-    img: '/assets/Safra-cat.svg',
+    img: './assets/Safra-cat.svg',
     name: 'Safra Catz',
     occupation: 'CEO Oracle',
     description:
@@ -50,7 +50,7 @@ const dynamicSpeakers = [
   },
   {
     id: 3,
-    img: '/assets/Sumbul.svg',
+    img: './assets/Sumbul.svg',
     name: 'Dr. Sumbul Desaie',
     occupation: 'Vice president of health, Apple',
     description:
@@ -58,7 +58,7 @@ const dynamicSpeakers = [
   },
   {
     id: 4,
-    img: '/assets/Ifedayo.svg',
+    img: './assets/Ifedayo.svg',
     name: 'Ifedayo Agoro',
     occupation: 'CEO DANG!, content and media strategist',
     description:
@@ -66,7 +66,7 @@ const dynamicSpeakers = [
   },
   {
     id: 5,
-    img: '/assets/Fei-fei.svg',
+    img: './assets/Fei-fei.svg',
     name: 'Fei-Fei LI',
     occupation: " Co-director of Stanford's Human-Centered AI Institute",
     description:
@@ -74,7 +74,7 @@ const dynamicSpeakers = [
   },
   {
     id: 6,
-    img: '/assets/Chimamanda.svg',
+    img: './assets/Chimamanda.svg',
     name: 'Blessing Ogodo',
     occupation: ' UI/UX Designer',
     description:
