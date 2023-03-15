@@ -59,7 +59,7 @@
 
 🚀 Live Demo
 
-- (Live Demo to be inputted after it PR has been approved in case of any changes)
+- (https://otegaa.github.io/IWES-Conference-2023/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
