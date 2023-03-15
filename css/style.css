@@ -408,7 +408,28 @@ body {
 }
 
 .footer {
-  display: none;
+  padding: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  background-color: var(--color-charleston-green);
+  color: var(--color-light-gray);
+}
+
+.footer__logoname {
+  display: flex;
+  gap: 0.4rem;
+  align-items: center;
+}
+
+.footer__img {
+  width: 3rem;
+  height: 3rem;
+}
+
+.footer__rights {
+  display: flex;
 }
 
 /* Desktop */
@@ -638,24 +659,9 @@ body {
 
   /* Footer */
   .footer {
-    padding: 3rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     gap: 9rem;
     background-color: var(--color-lighter-gray);
     color: var(--color-charleston-green);
-  }
-
-  .footer__logoname {
-    display: flex;
-    gap: 0.4rem;
-    align-items: center;
-  }
-
-  .footer__img {
-    width: 3rem;
-    height: 3rem;
   }
 
   .footer__rights {
