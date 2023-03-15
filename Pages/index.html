@@ -23,9 +23,10 @@
           <li>
             <a href="./about.html" class="menu-links">About</a>
           </li>
-          <li><a href="#" class="menu-links">Program</a></li>
-          <li><a href="#" class="menu-links">Join</a></li>
-          <li><a href="#" class="menu-links">Sponsor</a></li>
+          <li><a href="#program" class="menu-links">Program</a></li>
+          <li><a href="#join" class="menu-links">Join</a></li>
+          <li><a href="#speakers" class="menu-links">Speakers</a></li>
+          <li><a href="./about.html#sponsor" class="menu-links">Sponsor</a></li>
         </ul>
       </div>
 
@@ -43,17 +44,24 @@
 
           <!-- desktop -->
           <div class="desktop-navbar">
-            <a href="#" class="header-container__img">
-              <img
-                src="../assets/logo.svg"
-                alt=""
-                class="header-container__logo"
-              />
-            </a>
-            <h4 class="header-container__text">
-              <span class="header-container__text-big">IWES INTERNATIONAL</span>
-              <span class="header-container__text-small"> CONFERENCE 2023</span>
-            </h4>
+            <div class="header-container__img-text">
+              <a href="#" class="header-container__img">
+                <img
+                  src="../assets/logo.svg"
+                  alt=""
+                  class="header-container__logo"
+                />
+              </a>
+              <h4 class="header-container__text">
+                <span class="header-container__text-big"
+                  >IWES INTERNATIONAL</span
+                >
+                <br />
+                <span class="header-container__text-small">
+                  CONFERENCE 2023</span
+                >
+              </h4>
+            </div>
 
             <nav class="navbar">
               <ul class="navbar__list">
@@ -61,13 +69,13 @@
                   <a href="./about.html">About</a>
                 </li>
                 <li>
-                  <a href="#">Program</a>
+                  <a href="#program">Program</a>
                 </li>
                 <li>
-                  <a href="#">Join</a>
+                  <a href="#memo">Memo</a>
                 </li>
                 <li>
-                  <a href="#">Sponsor</a>
+                  <a href="#sponsor">Sponsor</a>
                 </li>
               </ul>
 
@@ -96,7 +104,7 @@
 
       <main>
         <!-- main program -->
-        <section class="main-program">
+        <section class="main-program" id="program">
           <h2 class="main-program__title">Main Program</h2>
           <i class="red-line"></i>
 
@@ -122,7 +130,7 @@
                 />
                 <h3 class="main-program__heading">Exhibition</h3>
                 <p class="main-program__text">
-                  Watch women demonstrate their abilities in their different
+                  Listen to speakers from various countries about their
                   professional fields.
                 </p>
               </li>
@@ -134,8 +142,8 @@
                 />
                 <h3 class="main-program__heading">Forum</h3>
                 <p class="main-program__text">
-                  Have the time to share your thoughts and ask questions with
-                  experts for each field.
+                  Listen to speakers from various countries about their
+                  professional fields.
                 </p>
               </li>
               <li class="main-program__details">
@@ -146,8 +154,8 @@
                 />
                 <h3 class="main-program__heading">Workshop</h3>
                 <p class="main-program__text">
-                  Try making your own work from the knowledge you garnered in
-                  the program.
+                  Listen to speakers from various countries about their
+                  professional fields.
                 </p>
               </li>
               <li class="main-program__details">
@@ -158,25 +166,31 @@
                 />
                 <h3 class="main-program__heading">Meet & Greet</h3>
                 <p class="main-program__text">
-                  Get an opportunity to connect with experts in each profession.
+                  Listen to speakers from various countries about their
+                  professional fields.
                 </p>
               </li>
             </ul>
-            <div class="btn">
+            <div class="btn" id="join">
               <button class="main-program__btn">
                 <span class="main-program__btn-visible">Join IWES 2023 </span>
                 <span class="main-program__btn-invisible">6 slots left</span>
               </button>
             </div>
+
+            <div class="main-program__memo" id="memo">
+              <a href="#" class="main-program__memo-link">Get Program Memo</a>
+            </div>
+            <i class="gray-line-memo"></i>
           </div>
         </section>
 
-        <section class="featured-speakers">
+        <section class="featured-speakers" id="speakers">
           <h2 class="featured-speakers__heading">Featured speakers</h2>
           <i class="red-line"></i>
-
+          <!-- Dynamic speakers box -->
           <div class="featured-speakers__dynamic-box"></div>
-
+          <!-- Buttons for mobile-->
           <div class="see-more">
             <button class="see-more__btn">
               <span class="see-more__text">More</span>
@@ -198,7 +212,38 @@
             </button>
           </div>
         </section>
+
+        <section class="partners" id="sponsor">
+          <div class="partners__heading">
+            <h3 class="partners__heading-text">Partners</h3>
+            <i class="red-line"></i>
+          </div>
+          <div class="partners__companies">
+            <ul class="partners__list">
+              <li>Google</li>
+              <li>Ingressive for good</li>
+              <li>Airbnb</li>
+              <li>Firefox</li>
+              <li>Slack</li>
+            </ul>
+          </div>
+        </section>
       </main>
+
+      <section class="footer">
+        <div class="footer__logoname">
+          <img src="../assets/logo.svg" alt="IWES logo" class="footer__img" />
+          <h4 class="footer__text">
+            <span class="footer__text-big">IWES INTERNATIONAL</span>
+            <br />
+            <span class="footer__text-small"> CONFERENCE 2023</span>
+          </h4>
+        </div>
+        <span class="footer__rights"
+          >2023 IWES. <br />
+          All rights reserved.</span
+        >
+      </section>
     </div>
   </body>
 </html>
