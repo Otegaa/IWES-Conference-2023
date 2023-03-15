@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Module-1-Capstone</title>
+    <script defer src="./index.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Top Navigation on desktop -->
+      <div class="login">
+        <ul class="login__nav">
+          <li>
+            <img
+              src="./assets/facebook.svg"
+              alt="Facebook icon"
+              class="login__fb"
+            />
+          </li>
+          <li>
+            <img
+              src="./assets/twitter.svg"
+              alt="Twitter icon"
+              class="login__twitter"
+            />
+          </li>
+          <li>English</li>
+          <li>My Page</li>
+          <li>Logout</li>
+        </ul>
+      </div>
+
+      <!-- Hamburger -->
+      <div class="hamburger hidden">
+        <div class="hamburger__close-container">
+          <img
+            src="./assets/cancelHamburger.png"
+            alt="close hamburger"
+            class="hamburger__close-img"
+          />
+        </div>
+
+        <ul class="hamburger__show-container">
+          <li>
+            <a href="./about.html" class="menu-links">About</a>
+          </li>
+          <li><a href="#program" class="menu-links">Program</a></li>
+          <li><a href="#join" class="menu-links">Join</a></li>
+          <li><a href="#speakers" class="menu-links">Speakers</a></li>
+          <li><a href="./about.html#sponsor" class="menu-links">Sponsor</a></li>
+        </ul>
+      </div>
+
+      <div class="header-container">
+        <!-- Header and navbar -->
+        <header class="header-container__nav">
+          <!-- hamburger icon for mobile -->
+          <div class="hamburger-container">
+            <img
+              src="./assets/hamburgerImg.svg"
+              alt="hamburger Image"
+              class="hamburger-container__img"
+            />
+          </div>
+
+          <!-- desktop -->
+          <div class="desktop-navbar">
+            <div class="header-container__img-text">
+              <a href="#" class="header-container__img">
+                <img
+                  src="./assets/logo.svg"
+                  alt=""
+                  class="header-container__logo"
+                />
+              </a>
+              <h4 class="header-container__text">
+                <span class="header-container__text-big"
+                  >IWES INTERNATIONAL</span
+                >
+                <br />
+                <span class="header-container__text-small">
+                  CONFERENCE 2023</span
+                >
+              </h4>
+            </div>
+
+            <nav class="navbar">
+              <ul class="navbar__list">
+                <li>
+                  <a class="active" href="./index.html">Home</a>
+                </li>
+                <li>
+                  <a href="./about.html">About</a>
+                </li>
+                <li>
+                  <a href="#program">Program</a>
+                </li>
+                <li>
+                  <a href="#sponsor">Sponsor</a>
+                </li>
+              </ul>
+
+              <h4 class="header-container__campaign">IWES Campaign</h4>
+            </nav>
+          </div>
+        </header>
+
+        <section class="info">
+          <h4 class="info__greeting">“Hello! Ladies”</h4>
+          <h1 class="info__meeting-info">
+            INTERNATIONAL WOMEN <br />
+            EMPOWERMENT SCHEME <br />
+            2023
+          </h1>
+          <p class="info__meeting-details">
+            A conference celebrating and empowering women, with people from over
+            80 countries, taking place in September, in Abuja, Nigeria.
+          </p>
+          <h3 class="info__meeting-date">2023.09.14(Thu) - 16(Fri)</h3>
+          <p class="info__meeting-address">
+            @ Abuja International Conference Centre
+          </p>
+        </section>
+      </div>
+
+      <main>
+        <!-- main program -->
+        <section class="main-program" id="program">
+          <h2 class="main-program__title">Main Program</h2>
+          <i class="red-line"></i>
+
+          <div class="main-program__all-details">
+            <ul class="main-program__list">
+              <li class="main-program__details">
+                <img
+                  src="./assets/lecture.svg"
+                  alt="lecture icon"
+                  class="main-program__img"
+                />
+                <h3 class="main-program__heading">Lecture</h3>
+                <p class="main-program__text">
+                  Listen to speakers from various countries about their
+                  professional fields.
+                </p>
+              </li>
+              <li class="main-program__details">
+                <img
+                  src="./assets/exhibition.svg"
+                  alt="Exhibition icon"
+                  class="main-program__img"
+                />
+                <h3 class="main-program__heading">Exhibition</h3>
+                <p class="main-program__text">
+                  Listen to speakers from various countries about their
+                  professional fields.
+                </p>
+              </li>
+              <li class="main-program__details">
+                <img
+                  src="./assets/forum.svg"
+                  alt="forum icon"
+                  class="main-program__img"
+                />
+                <h3 class="main-program__heading">Forum</h3>
+                <p class="main-program__text">
+                  Listen to speakers from various countries about their
+                  professional fields.
+                </p>
+              </li>
+              <li class="main-program__details">
+                <img
+                  src="./assets/workshop.svg"
+                  alt="workshop icon"
+                  class="main-program__img"
+                />
+                <h3 class="main-program__heading">Workshop</h3>
+                <p class="main-program__text">
+                  Listen to speakers from various countries about their
+                  professional fields.
+                </p>
+              </li>
+              <li class="main-program__details">
+                <img
+                  src="./assets/meetAndGreet.svg"
+                  alt="meet and greet icon"
+                  class="main-program__img"
+                />
+                <h3 class="main-program__heading">Meet & Greet</h3>
+                <p class="main-program__text">
+                  Listen to speakers from various countries about their
+                  professional fields.
+                </p>
+              </li>
+            </ul>
+            <div class="btn" id="join">
+              <button class="main-program__btn">
+                <span class="main-program__btn-visible">Join IWES 2023 </span>
+                <span class="main-program__btn-invisible">6 slots left</span>
+              </button>
+            </div>
+
+            <div class="main-program__memo" id="memo">
+              <a href="#" class="main-program__memo-link">Get Program Memo</a>
+            </div>
+            <i class="gray-line-memo"></i>
+          </div>
+        </section>
+
+        <section class="featured-speakers" id="speakers">
+          <h2 class="featured-speakers__heading">Featured speakers</h2>
+          <i class="red-line"></i>
+          <!-- Dynamic speakers box -->
+          <div class="featured-speakers__dynamic-box"></div>
+          <!-- Buttons for mobile-->
+          <div class="see-more">
+            <button class="see-more__btn">
+              <span class="see-more__text">More</span>
+              <img
+                src="./assets/down-arrow.svg"
+                alt="down-arrow"
+                class="see-more__img"
+              />
+            </button>
+          </div>
+          <div class="see-less hidden">
+            <button class="see-less__btn">
+              <span class="see-less__text">Less</span>
+              <img
+                src="./assets/up-arrow.svg"
+                alt="down-arrow"
+                class="see-less__img"
+              />
+            </button>
+          </div>
+        </section>
+
+        <section class="partners" id="sponsor">
+          <div class="partners__heading">
+            <h3 class="partners__heading-text">Partners</h3>
+            <i class="red-line"></i>
+          </div>
+          <div class="partners__companies">
+            <ul class="partners__list">
+              <li>Google</li>
+              <li>Ingressive for good</li>
+              <li>Airbnb</li>
+              <li>Firefox</li>
+              <li>Slack</li>
+            </ul>
+          </div>
+        </section>
+      </main>
+
+      <section class="footer">
+        <div class="footer__logoname">
+          <img src="./assets/logo.svg" alt="IWES logo" class="footer__img" />
+          <h4 class="footer__text">
+            <span class="footer__text-big">IWES INTERNATIONAL</span>
+            <br />
+            <span class="footer__text-small"> CONFERENCE 2023</span>
+          </h4>
+        </div>
+        <span class="footer__rights"
+          >2023 IWES. <br />
+          All rights reserved.</span
+        >
+      </section>
+    </div>
+  </body>
+</html>

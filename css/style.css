@@ -1,0 +1,702 @@
+/* font family */
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300&display=swap");
+
+/* Variables */
+:root {
+  --color-gray: #808080;
+  --color-lighter-gray: #ececec;
+  --color-light-gray: #d3d3d3;
+  --color-carmine-pink: #ec5242;
+  --color-carmine-pink-rgba: rgba(74, 20, 14, 0.95);
+  --color-royal-orange: #e72a17;
+  --color-charleston-green: #272a31;
+  --color-white: #fff;
+  --color-dark-charcoal: #323232;
+  --color-bg: #494e5a;
+  --transition: all 0.3s ease-in;
+}
+
+/* General styles */
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+}
+
+/* header and information */
+.header-container {
+  min-height: 50vh;
+  background-image: url(../assets/backgroundImg.svg);
+  background-size: cover;
+  padding: 1rem 2rem 5rem;
+}
+
+/* hamburger show and hide */
+.hamburger {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: 20;
+  background-color: var(--color-carmine-pink-rgba);
+  overflow-x: hidden;
+}
+
+.hamburger__close-container {
+  position: absolute;
+  top: 2.3rem;
+  left: 3.3rem;
+}
+
+.hamburger__close-img {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.hamburger__show-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 7rem;
+}
+
+.hamburger__show-container li {
+  border-bottom: 2px solid var(--color-light-gray);
+  padding: 0.6rem;
+  margin: 0.2rem 2rem 0.4rem;
+}
+
+.menu-links {
+  display: block;
+  color: var(--color-light-gray);
+  font-weight: 900;
+  margin-left: 1rem;
+  text-decoration: none;
+  font-size: 2.5rem;
+}
+
+.hidden {
+  display: none;
+}
+
+.login {
+  display: none;
+}
+
+.desktop-navbar {
+  display: none;
+}
+
+.hamburger-container {
+  margin-bottom: 3rem;
+}
+
+.hamburger-container__img {
+  width: 5rem;
+  height: 5rem;
+  cursor: pointer;
+}
+
+/* Info after hamburger */
+
+.info__greeting,
+.info__meeting-info {
+  display: inline-block;
+  background-image: url(../assets/backgroundClipTextImg.jpeg);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.info__greeting {
+  font-size: 2.3rem;
+  font-weight: 300;
+  margin-bottom: 0.7rem;
+  display: block;
+}
+
+.info__meeting-info {
+  font-size: 2.5rem;
+  font-weight: 900;
+  margin-bottom: 1.5rem;
+  letter-spacing: 1px;
+}
+
+.info__meeting-details {
+  font-size: 1.5rem;
+  line-height: 1.5;
+  background-color: var(--color-lighter-gray);
+  color: var(--color-charleston-green);
+  border: 2px solid var(--color-white);
+  margin-bottom: 1.1rem;
+  padding: 0.7rem;
+}
+
+@media screen and (min-width: 30.625em) {
+  .info__meeting-details {
+    width: 70%;
+  }
+}
+
+.info__meeting-date {
+  font-size: 2rem;
+  font-weight: 900;
+  color: var(--color-charleston-green);
+  margin-bottom: 0.7rem;
+}
+
+.info__meeting-address {
+  font-size: 1.5rem;
+  color: var(--color-charleston-green);
+}
+
+/* main program */
+.main-program {
+  background-color: var(--color-charleston-green);
+  color: var(--color-light-gray);
+  padding: 2rem;
+}
+
+.main-program__title {
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+}
+
+/* center the line */
+.red-line {
+  display: flex;
+  margin: 0 auto;
+  border: 1px solid var(--color-carmine-pink);
+  width: 40px;
+  margin-bottom: 2.5rem;
+}
+
+.main-program__list {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.main-program__details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--color-bg);
+  padding: 1rem;
+  width: 100%;
+}
+
+.main-program__img {
+  width: 5rem;
+  height: 5rem;
+}
+
+.main-program__heading {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--color-carmine-pink);
+}
+
+.main-program__text {
+  font-size: 1.3rem;
+  width: 48%;
+}
+
+/* join IWES button */
+
+.btn {
+  display: flex;
+  justify-content: center;
+}
+
+.main-program__btn {
+  border: none;
+  font-weight: 700;
+  text-transform: uppercase;
+  background-image:
+    linear-gradient(
+      to right,
+      var(--color-carmine-pink),
+      var(--color-royal-orange)
+    );
+  color: var(--color-light-gray);
+  border-radius: 100px;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.main-program__btn > * {
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  transition: var(--transition);
+}
+
+.main-program__btn-visible {
+  padding: 2rem 5rem;
+}
+
+.main-program__btn-invisible {
+  padding: 2rem 0;
+  position: absolute;
+  left: 0;
+  top: -100%;
+}
+
+.main-program__btn:hover {
+  background-image:
+    linear-gradient(
+      to left,
+      var(--color-carmine-pink),
+      var(--color-royal-orange)
+    );
+}
+
+.main-program__btn:hover .main-program__btn-visible {
+  transform: translateY(100%);
+}
+
+.main-program__btn:hover .main-program__btn-invisible {
+  top: 0;
+}
+
+.main-program__btn:focus {
+  outline: none;
+  animation: pulsate 1s infinite;
+}
+
+.main-program__memo {
+  display: none;
+}
+
+@keyframes pulsate {
+  0% {
+    transform: scale(1);
+    box-shadow: none;
+  }
+
+  50% {
+    transform: scale(1.05);
+    box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.25);
+  }
+
+  100% {
+    transform: scale(1);
+    box-shadow: none;
+  }
+}
+
+/* featured speakers section */
+.featured-speakers {
+  margin-top: 3rem;
+}
+
+.featured-speakers__heading {
+  font-size: 2rem;
+  font-weight: 700;
+  padding-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+.featured-speakers__box {
+  display: flex;
+  padding: 1.5rem;
+  gap: 1.2rem;
+}
+
+.featured-speakers__box-display {
+  display: none;
+}
+
+.featured-speakers__box-display:nth-child(1),
+.featured-speakers__box-display:nth-child(2) {
+  display: flex;
+}
+
+.featured-speakers__img {
+  width: 10rem;
+  height: 10rem;
+}
+
+.featured-speakers__name {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--color-charleston-green);
+  margin-bottom: 0.5rem;
+}
+
+.featured-speakers__occupation {
+  font-size: 1rem;
+  font-weight: 700;
+  font-style: italic;
+  color: var(--color-carmine-pink);
+  padding-bottom: 0.7rem;
+}
+
+.gray-line {
+  display: flex;
+  border: 1px solid var(--color-light-gray);
+  width: 20px;
+  margin-bottom: 1rem;
+}
+
+.featured-speakers__description {
+  font-size: 1rem;
+}
+
+.see-more,
+.see-less {
+  padding: 1.5rem;
+}
+
+.see-more__btn,
+.see-less__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.3rem;
+  width: 100%;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  padding: 0.7rem 0;
+  color: var(--color-charleston-green);
+  transition: var(--transition);
+  cursor: pointer;
+  background-color: var(--color-white);
+  border: none;
+  box-shadow: 0 0 0 1px var(--color-light-gray);
+}
+
+.see-more__btn:hover,
+.see-less__btn:hover {
+  background-color: var(--color-charleston-green);
+  color: var(--color-light-gray);
+}
+
+.see-more__img,
+.see-less__img {
+  width: 1rem;
+  height: 1rem;
+}
+
+.partners {
+  display: none;
+}
+
+.footer {
+  padding: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  background-color: var(--color-charleston-green);
+  color: var(--color-light-gray);
+}
+
+.footer__logoname {
+  display: flex;
+  gap: 0.4rem;
+  align-items: center;
+}
+
+.footer__img {
+  width: 3rem;
+  height: 3rem;
+}
+
+.footer__rights {
+  display: flex;
+}
+
+/* Desktop */
+@media screen and (min-width: 48em) {
+  .header-container {
+    padding: 0 0 5rem;
+  }
+
+  .hamburger-container {
+    display: none;
+  }
+
+  /* Top Navigation on desktop  */
+
+  .login {
+    display: block;
+    background-color: var(--color-charleston-green);
+    height: 3rem;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 15;
+    padding: 1rem 3rem;
+  }
+
+  .login__nav {
+    display: flex;
+    justify-content: flex-end;
+    margin: 0 auto;
+    gap: 1.5rem;
+  }
+
+  .login__fb,
+  .login__twitter {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  .login__nav li {
+    color: var(--color-light-gray);
+    font-weight: 700;
+    font-size: 1.2rem;
+  }
+
+  /* For the navbar */
+  .desktop-navbar {
+    margin-top: 3rem;
+    display: flex;
+    background-color: var(--color-white);
+    padding: 1rem 3rem;
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+
+  .header-container__img-text {
+    display: flex;
+    gap: 0.2rem;
+    justify-content: center;
+    align-items: center;
+    margin-right: auto;
+  }
+
+  .header-container__logo {
+    width: 3rem;
+    height: 3rem;
+  }
+
+  .header-container__text {
+    font-size: 1.2rem;
+    font-weight: 700;
+  }
+
+  .navbar {
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+  }
+
+  .navbar__list {
+    display: flex;
+    align-items: center;
+    gap: 4.5rem;
+  }
+
+  .navbar__list li a {
+    color: var(--color-gray);
+    font-size: 1.2rem;
+    transition: var(--transition);
+  }
+
+  .navbar__list li a:hover {
+    color: var(--color-carmine-pink);
+  }
+
+  .header-container__campaign {
+    color: var(--color-carmine-pink);
+    font-size: 1.2rem;
+    outline: 0.4rem solid var(--color-carmine-pink);
+    outline-offset: 0.7rem;
+  }
+
+  /* For the info about meeting */
+
+  .info {
+    padding: 6rem 3rem 0;
+    margin-top: 5rem;
+  }
+
+  .info__meeting-info {
+    font-size: 4rem;
+  }
+
+  .info__meeting-details {
+    width: 65%;
+  }
+
+  /* For the main program section */
+  .main-program__all-details {
+    padding: 2rem 3rem;
+  }
+
+  .main-program__list {
+    flex-direction: row;
+    gap: 0.5rem;
+    margin-bottom: 4.5rem;
+  }
+
+  .main-program__details {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .main-program__img {
+    width: 3rem;
+    height: 3rem;
+  }
+
+  .main-program__text {
+    width: 100%;
+    line-height: 1.5;
+    text-align: center;
+    height: 80%;
+  }
+
+  /* Make btn invisible and add see program */
+  .btn {
+    display: none;
+  }
+
+  .main-program__memo {
+    display: flex;
+    justify-content: center;
+  }
+
+  .main-program__memo-link:link,
+  .main-program__memo-link:visited {
+    font-size: 1.5rem;
+    color: var(--color-light-gray);
+    text-transform: uppercase;
+    transition: var(--transition);
+  }
+
+  .main-program__memo-link:hover,
+  .main-program__memo-link:active {
+    color: var(--color-carmine-pink);
+    transform: scale(1.05);
+  }
+
+  .gray-line-memo {
+    display: flex;
+    border: 1px solid var(--color-gray);
+    width: 15rem;
+    margin: 0 auto;
+  }
+
+  /* Featured spakers */
+
+  .featured-speakers__dynamic-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .featured-speakers__box-display {
+    display: flex;
+  }
+
+  .see-more,
+  .see-less {
+    display: none;
+  }
+
+  /* Partners section */
+
+  .partners {
+    display: block;
+    margin-top: 4rem;
+    background-color: var(--color-charleston-green);
+    padding: 3rem 6rem;
+  }
+
+  .partners__heading {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .partners__heading-text {
+    font-size: 2rem;
+    color: var(--color-light-gray);
+    padding-bottom: 1.5rem;
+  }
+
+  .partners__list {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .partners__list li {
+    text-transform: uppercase;
+    font-size: 1.7rem;
+    color: var(--color-gray);
+  }
+
+  /* Footer */
+  .footer {
+    gap: 9rem;
+    background-color: var(--color-lighter-gray);
+    color: var(--color-charleston-green);
+  }
+
+  .footer__rights {
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 62.5em) {
+  .login {
+    padding: 0.7rem 15rem;
+  }
+
+  .desktop-navbar {
+    padding: 1rem 15rem;
+  }
+
+  .info {
+    padding: 6rem 15rem 0;
+    margin-top: 5rem;
+  }
+
+  .main-program {
+    padding: 0 15rem;
+  }
+
+  .featured-speakers {
+    padding: 0 15rem;
+  }
+
+  .partners {
+    padding: 3rem 15rem;
+  }
+}
+
+/* Active class */
+.active:is(:link, :active, :visited) {
+  color: var(--color-carmine-pink);
+}

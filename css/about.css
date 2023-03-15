@@ -1,0 +1,537 @@
+/* font family */
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300&display=swap");
+
+/* Variables */
+:root {
+  --color-gray: #808080;
+  --color-lighter-gray: #ececec;
+  --color-light-gray: #d3d3d3;
+  --color-carmine-pink: #ec5242;
+  --color-carmine-pink-rgba: rgba(74, 20, 14, 0.95);
+  --color-royal-orange: #e72a17;
+  --color-charleston-green: #272a31;
+  --color-white: #fff;
+  --color-dark-charcoal: #323232;
+  --color-bg: #494e5a;
+  --transition: all 0.3s ease-in;
+}
+
+/* General styles */
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+}
+
+/* Header and information */
+.header-container {
+  min-height: 50vh;
+  background-image: url(../assets/backgroundImg.svg);
+  background-size: cover;
+  padding: 1rem 2rem 5rem;
+}
+
+/* hamburger show and hide */
+.hamburger {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: 20;
+  background-color: var(--color-carmine-pink-rgba);
+  overflow-x: hidden;
+}
+
+.hamburger__close-container {
+  position: absolute;
+  top: 2.3rem;
+  left: 3.3rem;
+}
+
+.hamburger__close-img {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.hamburger__show-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 7rem;
+}
+
+.hamburger__show-container li {
+  border-bottom: 2px solid var(--color-light-gray);
+  padding: 0.6rem;
+  margin: 0.2rem 2rem 0.4rem;
+}
+
+.menu-links {
+  display: block;
+  color: var(--color-light-gray);
+  font-weight: 900;
+  margin-left: 1rem;
+  text-decoration: none;
+  font-size: 2.5rem;
+}
+
+.hidden {
+  display: none;
+}
+
+.login {
+  display: none;
+}
+
+.desktop-navbar {
+  display: none;
+}
+
+.hamburger-container {
+  margin-bottom: 2rem;
+}
+
+.hamburger-container__img {
+  width: 5rem;
+  height: 5rem;
+  cursor: pointer;
+}
+
+/* Info after hamburger */
+
+.info__box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.info__greeting,
+.info__meeting-info {
+  background-image: url(../assets/backgroundClipTextImg.jpeg);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.info__greeting {
+  font-size: 2.3rem;
+  font-weight: 300;
+  margin-bottom: 0.7rem;
+  display: block;
+}
+
+.info__meeting-info {
+  font-size: 2.5rem;
+  font-weight: 900;
+  margin-bottom: 2rem;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+.info__meeting-details {
+  font-size: 1.5rem;
+  line-height: 1.5;
+  background-color: var(--color-white);
+  color: var(--color-gray);
+  box-shadow: 0 0 0 1px var(--color-light-gray);
+  margin-bottom: 2rem;
+  padding: 0.9rem;
+  text-align: center;
+}
+
+.info__meeting-contact-info {
+  text-align: center;
+  font-size: 1.2rem;
+  color: var(--color-gray);
+  line-height: 1.5;
+}
+
+.info__meeting-contact {
+  margin-top: 0.5rem;
+  color: var(--color-charleston-green);
+  font-size: 1.2rem;
+  transition: var(--transition);
+}
+
+.info__meeting-contact:hover {
+  color: var(--color-carmine-pink);
+  transform: scale(1.05);
+}
+
+.gray-line-memo {
+  display: flex;
+  border-bottom: 1px solid var(--color-gray);
+  width: 15.8rem;
+  margin: 0 auto;
+}
+
+/* Logo section */
+
+.logo {
+  background-color: var(--color-white);
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+
+.logo__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo__box-heading {
+  text-align: center;
+  line-height: 1.5;
+  padding: 1rem;
+  color: var(--color-charleston-green);
+}
+
+.red-line {
+  display: flex;
+  margin: 0 auto;
+  border: 1px solid var(--color-carmine-pink);
+  width: 25px;
+  margin-bottom: 2.5rem;
+}
+
+.logo__box-text {
+  text-align: center;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  margin-bottom: 3.5rem;
+  color: var(--color-charleston-green);
+}
+
+.logo__box {
+  display: flex;
+  align-items: center;
+  box-shadow: 0 0 0 1px var(--color-light-gray);
+  padding: 3rem 4rem;
+  gap: 0.5rem;
+}
+
+.logo__text-box {
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+}
+
+.logo__text {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--color-charleston-green);
+  letter-spacing: 1px;
+}
+
+.logo__date {
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  border-top: 1px solid var(--color-light-gray);
+  border-bottom: 1px solid var(--color-light-gray);
+  color: var(--color-charleston-green);
+}
+
+/* Past conference */
+.past-conference {
+  padding: 2rem;
+  border-top: 1px solid var(--color-light-gray);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.past-conference__heading {
+  padding-bottom: 1rem;
+}
+
+.past-conference__red-line {
+  display: flex;
+  margin: 0 auto;
+  border: 1px solid var(--color-carmine-pink);
+  width: 25px;
+  margin-bottom: 1.2rem;
+}
+
+.past-conference__text {
+  text-align: center;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  margin-bottom: 2rem;
+}
+
+.past-conference__images {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.past-conference__images-box-1,
+.past-conference__images-box-2 {
+  position: relative;
+}
+
+.past-conference__img-box {
+  background-size: cover;
+  height: 20rem;
+  width: 30rem;
+  background-blend-mode: multiply;
+  background-color: var(--color-carmine-pink);
+}
+
+.past-conference__img-box-1 {
+  background-image: url(../assets/women-empowerment-budapest.jpg);
+}
+
+.past-conference__img-box-2 {
+  background-image: url(../assets/women-empowerment-california.jpg);
+}
+
+.past-conference__text-box {
+  position: absolute;
+  top: 35%;
+  left: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 10;
+  color: var(--color-light-gray);
+}
+
+.past-conference__text-box-date {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.past-conference__text-box-location {
+  font-size: 1.05rem;
+}
+
+/* Partners section */
+.partners {
+  margin-top: 4rem;
+  background-color: var(--color-charleston-green);
+  padding: 3rem;
+}
+
+.partners__heading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.partners__heading-text {
+  font-size: 2rem;
+  color: var(--color-light-gray);
+  padding-bottom: 1.5rem;
+}
+
+.partners__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.partners__list li {
+  text-transform: uppercase;
+  font-size: 1.7rem;
+  color: var(--color-gray);
+}
+
+/* FOOTER */
+.footer {
+  padding: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.footer__logoname {
+  display: flex;
+  gap: 0.4rem;
+  align-items: center;
+}
+
+.footer__img {
+  width: 3rem;
+  height: 3rem;
+}
+
+/* DESKTOP */
+
+@media screen and (min-width: 48em) {
+  .header-container {
+    padding: 0 0 5rem;
+  }
+
+  .hamburger-container {
+    display: none;
+  }
+
+  /* Top Navigation on desktop  */
+
+  .login {
+    display: block;
+    background-color: var(--color-charleston-green);
+    height: 3rem;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 15;
+    padding: 1rem 3rem;
+  }
+
+  .login__nav {
+    display: flex;
+    justify-content: flex-end;
+    margin: 0 auto;
+    gap: 1.5rem;
+  }
+
+  .login__fb,
+  .login__twitter {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  .login__nav li {
+    color: var(--color-light-gray);
+    font-weight: 700;
+    font-size: 1.2rem;
+  }
+
+  /* For the navbar */
+  .desktop-navbar {
+    margin-top: 3rem;
+    display: flex;
+    background-color: var(--color-white);
+    padding: 1rem 3rem;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 15;
+  }
+
+  .header-container__img-text {
+    display: flex;
+    gap: 0.2rem;
+    justify-content: center;
+    align-items: center;
+    margin-right: auto;
+  }
+
+  .header-container__logo {
+    width: 3rem;
+    height: 3rem;
+  }
+
+  .header-container__text {
+    font-size: 1.2rem;
+    font-weight: 700;
+  }
+
+  .navbar {
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+  }
+
+  .navbar__list {
+    display: flex;
+    align-items: center;
+    gap: 4.5rem;
+  }
+
+  .navbar__list li a {
+    color: var(--color-gray);
+    font-size: 1.2rem;
+    transition: var(--transition);
+  }
+
+  .navbar__list li a:hover {
+    color: var(--color-carmine-pink);
+  }
+
+  .header-container__campaign {
+    color: var(--color-carmine-pink);
+    font-size: 1.2rem;
+    outline: 0.4rem solid var(--color-carmine-pink);
+    outline-offset: 0.7rem;
+  }
+
+  /* For the info about meeting */
+
+  .info {
+    padding: 6rem 5rem 0;
+    margin-top: 5rem;
+  }
+
+  .info__meeting-info {
+    font-size: 4rem;
+  }
+
+  .info__meeting-details {
+    width: 60%;
+  }
+
+  /* Past conference */
+  .past-conference__images {
+    flex-direction: row;
+    gap: 1.5rem;
+  }
+
+  /* Partners */
+  .partners {
+    display: none;
+  }
+
+  /* Footer */
+
+  .footer {
+    background-color: var(--color-charleston-green);
+    color: var(--color-light-gray);
+    gap: 5rem;
+  }
+}
+
+@media screen and (min-width: 62.5em) {
+  .login {
+    padding: 0.7rem 15rem;
+  }
+
+  .desktop-navbar {
+    padding: 1rem 15rem;
+  }
+
+  .info {
+    padding: 6rem 15rem 0;
+    margin-top: 5rem;
+  }
+}
+
+/* Active class */
+.active:is(:link, :active, :visited) {
+  color: var(--color-carmine-pink);
+}
