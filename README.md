@@ -59,7 +59,7 @@
 
 🚀 Live Demo
 
-- [Github Pages] (https://otegaa.github.io/IWES-Conference-2023/)
+- [Github Pages](https://otegaa.github.io/IWES-Conference-2023/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
