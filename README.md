@@ -63,6 +63,10 @@
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+## Image view:
+![WhatsApp Image 2023-05-29 at 1 33 14 PM](https://github.com/Otegaa/IWES-Conference-2023/assets/92754123/6515e55d-a476-4527-afec-52556450cad2)
+
+
 ## 💻 Getting Started <a name="getting-started"></a>
 
 To get a local copy up and running, follow these steps.
